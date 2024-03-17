@@ -1,108 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Papelería Gatonio | Articulos</title>
-</head>
-<body>
-    <nav class="flex flex-row justify-around p-5 bg-blue">
-        <div>Papelería Gatonio</div>
-        <ul class="flex flex-row justify-between gap-x-5">
-          <li>
-            <a
-              href="../index.html"
-              class="hover:text-beige hover:border-b-2 hover:border-beige p-3 duration-75 ease-out"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="articulos.html"
-              class="hover:text-beige hover:border-b-2 hover:border-beige p-3 duration-75 ease-out"
-              >Articulos</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <header
+  </head>
+  <body>
+    <nav class="flex flex-row justify-around p-5 bg-beige">
+      <div>Papelería Gatonio</div>
+      <ul class="flex flex-row justify-between gap-x-5">
+        <li>
+          <a
+            href="../index.html"
+            class="hover:text-aqua hover:border-b-2 hover:border-aqua p-3 duration-75 ease-out"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="articulos.html"
+            class="hover:text-aqua hover:border-b-2 hover:border-aqua p-3 duration-75 ease-out"
+            >Articulos</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header
       class="h-48 p-5 flex justify-center items-center bg-cover bg-center"
       style="background-image: url('../assets/img/notebook-3820634_1280.jpg')"
     >
       <section class="p-5">
-        <h1 class="text-2xl text-aqua">
-          Articulos en venta
-        </h1>
+        <h1 class="text-2xl text-aqua">Articulos en venta</h1>
       </section>
     </header>
-      <main class="flex flex-col m-10 gap-y-3">
-        <section class="m-5 grid grid-cols-4 gap-2">
-            <article class="flex flex-col">
-              <img
-                class=""
-                src="../assets/img/Articulos/Hojas-de-color-tamaño-carta.webp"
-                alt="Hojas-de-color-tamaño-carta"
-              />
-              <div>
-                <p class="font-normal text-justify text-lg">
-                  Hojas blancas de tamaño carta
-                </p>
-                <!-- <p>$2 pz</p> -->
-              </div>
-            </article>
-            <article class="flex flex-col">
-              <img
-                class=""
-                src="../assets/img/Articulos/lapiz-metrico-DIXON.webp"
-                alt="Hojas-de-color-tamaño-carta"
-              />
-              <div>
-                <p class="font-normal text-justify text-lg">
-                    Lapiz Metrico DIXON
-                </p>
-              </div>
-            </article>
-            <article class="flex flex-col">
-              <img
-                class=""
-                src="../assets/img/Articulos/Pluma-punto-fino-blazor-tinta-azul.webp"
-                alt="Hojas-de-color-tamaño-carta"
-              />
-              <div>
-                <p class="font-normal text-justify text-lg">
-                    Pluma puntofino blazor tinta azul
-                </p>
-              </div>
-            </article>
-            <article class="flex flex-col">
-              <img
-                class=""
-                src="../assets/img/Articulos/Pluma-punto-fino-blazor-tinta-roja.webp"
-                alt="Hojas-de-color-tamaño-carta"
-              />
-              <div>
-                <p class="font-normal text-justify text-lg">
-                    Pluma puntofino blazor tinta roja
-                </p>
-                <p></p>
-              </div>
-            </article>
-            <article class="flex flex-col">
-                <img
-                  class=""
-                  src="../assets/img/Articulos/Pluma-punto-fino-blazor-tinta-negra.webp"
-                  alt="Hojas-de-color-tamaño-carta"
-                />
-                <div>
-                  <p class="font-normal text-justify text-lg">
-                      Pluma puntofino blazor tinta negra
-                  </p>
-                  <p></p>
-                </div>
-              </article>
-          </section>
-      </main>
-      <script type="module" src="../main.js"></script>
+    <main class="flex flex-col m-10 gap-y-3">
+      <section class="m-5 grid grid-cols-4 gap-2">
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Hojas-de-color-tamaño-carta.webp"
+            alt="Hojas-de-color-tamaño-carta"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p>Hojas de color tamaño carta</p>
+            <p>$2 pz</p>
+          </div>
+        </article>
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/lapiz-metrico-DIXON.webp"
+            alt="lapiz-metrico-DIXON"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Lapiz Metrico DIXON n°2
+            </p>
+            <p>$7 pz</p>
+          </div>
+        </article>
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Pluma-punto-fino-blazor-tinta-azul.webp"
+            alt="Pluma-punto-fino-blazor-tinta-azul"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Pluma punto fino blazor tinta azul
+            </p>
+            <p>$8 pz</p>
+          </div>
+        </article>
 
-</body>
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Pluma-punto-fino-blazor-tinta-negra.webp"
+            alt="Pluma-punto-fino-blazor-tinta-negra"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Pluma punto fino blazor tinta negra
+            </p>
+            <p>$8 pz</p>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Pluma-punto-fino-blazor-tinta-roja.webp"
+            alt="Pluma-punto-fino-blazor-tinta-roja"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Pluma punto fino blazor tinta roja
+            </p>
+            <p>$8 pz</p>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Borrador-pelikan-ws-60.webp"
+            alt="Borrador-pelikan-ws-60"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Borrador pelikan ws 60
+            </p>
+            <p>$3 pz</p>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Corrector-pluma.webp"
+            alt="Corrector-pluma"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Corrector de pluma SMART
+            </p>
+            <p>$21 pz</p>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Cuaderno-profecional-SWING-cuadros.webp"
+            alt="Cuaderno-profecional-SWING-cuadros"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Cuaderno profecional SWING cuadros
+            </p>
+            <p>$22 pz</p>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Cuaderno-profecional-SWING-rayas.webp"
+            alt="Cuaderno-profecional-SWING-rayas"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Cuaderno profecional SWING rayas
+            </p>
+            <p>$22 pz</p>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Folder-tamaño-carta-color-crema.webp"
+            alt="Folder-tamaño-carta-color-crema"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Folder tamaño carta color rema
+            </p>
+            <p>$5 pz</p>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Hojas-blancas-tamaño-carta.webp"
+            alt="Hojas-blancas-tamaño-carta"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Hojas blancas tamaño carta
+            </p>
+            <p>$1 pz</p>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Pegamento-liquido-fix-up-30g.webp"
+            alt="Pegamento-liquido-fix-up-30g"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Pegamento liquido fix up 30g
+            </p>
+            <p>$6 pz</p>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Reglas-palticas-30cm.webp"
+            alt="Reglas-palticas-30cm"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Reglas palticas 30cm REAN 
+            </p>
+            <p>$6 pz</p>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Tijeras-escolares-pekes-5.webp"
+            alt="Tijeras-escolares-pekes-5"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Tijeras escolares pekes '5.
+            </p>
+            <p>$15 pz</p>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Cuaderno-grapado-italiano-cuadros.webp"
+            alt="Cuaderno-grapado-italiano-cuadros"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Cuaderno grapado italiano cuadros
+            </p>
+            <p>$22 pz</p>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col justify-center items-center border border-aqua rounded-md"
+        >
+          <img
+            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
+            src="../assets/img/Articulos/Cuaderno-grapado-italiano-rayas.webp"
+            alt="Cuaderno-grapado-italiano-rayas"
+          />
+          <div class="p-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify text-lg">
+              Cuaderno grapado italiano rayas
+            </p>
+            <p>$22 pz</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script type="module" src="../main.js"></script>
+  </body>
 </html>
