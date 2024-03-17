@@ -1,4 +1,4 @@
-import './style.css'
+// import './style.css'
 
 // window.addEventListener('scroll', function() {
 //     const parallax = document.getElementById('parallax');
