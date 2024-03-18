@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Papelería Gatonio</title>
     <link rel="stylesheet" href="./style.css" />
+    <meta name="description" content="Papelería Gatonio - Tu fuente confiable para todas tus necesidades de papelería. Ofrecemos una amplia gama de productos de papelería de alta calidad a precios competitivos.">
+    <meta name="keywords" content="Papelería Gatonio, papelería, material escolar, artículos de papelería de calidad, precios competitivos">
+  
   </head>
   <body>
-    <nav class="flex flex-row justify-around p-5 bg-beige">
+    <nav class="flex flex-col md:flex-row justify-around p-5 bg-beige">
       <div>Papelería Gatonio</div>
       <ul class="flex flex-row justify-between gap-x-5">
         <li>
@@ -31,7 +34,7 @@
       style="background-image: url('./assets/img/notebook-3820634_1280.jpg')"
     >
       <section class="p-5">
-        <h1 class="text-2xl">
+        <h1 class="text-xl md:text-2xl">
           Papelería Gatonio: Suministros escolares para el aprendizaje exitoso
         </h1>
       </section>
@@ -43,8 +46,8 @@
       <section class="flex justify-center">
         <h2 class="text-2xl border-b-2 border-aqua">Ofresemos</h2>
       </section>
-      <section class="m-5 grid grid-cols-2">
-        <div class="p-5">
+      <section class="m-5 grid grid-cols-1 md:grid-cols-2">
+        <div class="p-2 md:p-5">
           <img
             class="h-64"
             src="./assets/svg/undraw_photocopy_re_gln4.svg"
@@ -53,24 +56,24 @@
         </div>
         <div class="flex justify-center items-center p-2">
           <p class="text-justify">
-            <span class="font-bold text-blue">Impresiones y Copias:</span> Ya
+            <span class="font-bold ">Impresiones y Copias:</span> Ya
             sea que necesites imprimir un informe importante, copiar documentos
             para una reunión o producir folletos para un evento, nuestro
             servicio de impresión y copia de alta calidad está a tu disposición.
           </p>
         </div>
       </section>
-      <section class="m-5 grid grid-cols-2">
-        <div class="flex justify-center items-center p-2">
+      <section class="m-5 grid grid-cols-1 md:grid-cols-2">
+        <div class="flex justify-center items-center p-2 order-2 md:order-1">
           <p class="text-justify">
-            <span class="font-bold text-blue">Venta de Cartulinas: </span>
+            <span class="font-bold ">Venta de Cartulinas: </span>
             Tenemos una amplia selección de cartulinas de alta calidad
             disponibles en una variedad de colores y tamaños. Perfectas para
             todo, desde proyectos de arte hasta presentaciones profesionales,
             nuestras cartulinas te ayudarán a llevar tus ideas a la vida.
           </p>
         </div>
-        <div class="p-5">
+        <div class="p-2 md:p-5 order-1 md:order-2">
           <img
             class="h-64"
             src="./assets/svg/undraw_specs_re_546x.svg"
@@ -82,7 +85,7 @@
         class="h-48 bg-no-repeat bg-center bg-fixed"
         style="background-image: url('./assets/img/calculator-385506_1280.jpg')"
       ></div>
-      <section class="m-5 grid grid-cols-4 gap-2">
+      <section class="m-5 grid grid-cols-1 md:grid-cols-4 gap-2">
         <article class="flex flex-col justify-center items-center border border-aqua rounded-md">
           <img
           class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
@@ -147,7 +150,7 @@
                   <img src="https://www.svgrepo.com/show/401340/cookie.svg" alt="Cookie" class="h-6 w-6 mr-2">
                   <span class="text-gray-700 font-bold text-sm">Cookie Policy</span>
               </div>
-              <button class="text-gray-500 hover:text-gray-700 focus:outline-none" id="closecookie">
+              <button aria-label="close-cokkies" class="text-gray-500 hover:text-gray-700 focus:outline-none" id="closecookie">
                   <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
                       </path>
