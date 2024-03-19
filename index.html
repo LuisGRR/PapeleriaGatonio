@@ -33,8 +33,8 @@
     </script>
   </head>
   <body>
-    <nav class="flex flex-col md:flex-row justify-around p-5 bg-beige">
-      <div><a  class="flex justify-center items-center" href="./index.html"> <img class="h-11 w-11" src="./assets/icons/logo-sinfondo.png" alt="logo"><span> Papelería Gatonio</span></a></div>
+    <nav class="flex flex-col md:flex-row justify-around p-5 gap-5 md:gap-0 bg-beige">
+      <div><a  class="flex justify-center items-center" href="./index.html"> <img class="h-11 w-11 animate__animated animate__bounceInLeft" src="./assets/icons/logo-sinfondo.webp" alt="logo"><span> Papelería Gatonio</span></a></div>
       <ul class="flex flex-row justify-between items-center gap-x-5">
         <li>
           <a
@@ -54,7 +54,7 @@
     </nav>
     <header
       class="h-96 p-5 flex flex-col justify-center items-center bg-cover bg-center"
-      style="background-image: url('./assets/img/notebook-3820634_1280.jpg')"
+      style="background-image: url('./assets/img/notebook-3820634_1280.webp')"
     >
       <section class="">
         <h1 class="text-xl md:text-2xl">
@@ -62,15 +62,15 @@
         </h1>
       </section>
       <section class="flex flex-row justify-around">
-            <img class="h-20 w-20 md:w-52 md:h-52" src="./assets/icons/logo-sinfondo.png" alt="cat">
+            <img id="logoAnimation" class="h-20 w-20 md:w-52 md:h-52 animate__animated animate__bounce" src="./assets/icons/logo-sinfondo.webp" alt="cat">
         </section>
     </header>
     <main class="flex flex-col m-10 gap-y-3">
       <section class="flex justify-center">
-        <h2 class="text-2xl border-b-2 border-aqua">Ofresemos</h2>
+        <h2 class="text-2xl border-b-2 border-aqua animate__animated animate__backInUp">Ofresemos</h2>
       </section>
       <section class="m-5 grid grid-cols-1 md:grid-cols-2">
-        <div class="p-2 md:p-5">
+        <div class="p-2 md:p-5 flex justify-center">
           <img
             class="h-64"
             src="./assets/svg/undraw_photocopy_re_gln4.svg"
@@ -87,7 +87,7 @@
         </div>
       </section>
       <section class="m-5 grid grid-cols-1 md:grid-cols-2">
-        <div class="flex justify-center items-center p-2 order-2 md:order-1">
+        <div class="flex justify-around items-center p-2 order-2 md:order-1">
           <p class="text-justify">
             <span class="font-bold">Venta de Cartulinas: </span>
             Tenemos una amplia selección de cartulinas de alta calidad
@@ -96,7 +96,7 @@
             nuestras cartulinas te ayudarán a llevar tus ideas a la vida.
           </p>
         </div>
-        <div class="p-2 md:p-5 order-1 md:order-2">
+        <div class="p-2 md:p-5 order-1 md:order-2 flex justify-center">
           <img
             class="h-64"
             src="./assets/svg/undraw_specs_re_546x.svg"
@@ -106,7 +106,7 @@
       </section>
       <div
         class="h-48 bg-no-repeat bg-center bg-fixed"
-        style="background-image: url('./assets/img/calculator-385506_1280.jpg')"
+        style="background-image: url('./assets/img/calculator-385506_1280.webp')"
       ></div>
       <section class="m-5 grid grid-cols-1 md:grid-cols-4 gap-2">
         <article
@@ -168,7 +168,7 @@
         </article>
       </section>
     </main>
-    <div class="fixed bottom-0 right-0 mb-4 mr-4 w-64 hidden" id="avisoCokkies">
+    <div class="fixed bottom-0 right-0 mb-4 mr-4 w-64 hidden animate__animated animate__backInRight" id="avisoCokkies">
       <div class="bg-science-blue-50 rounded-lg shadow-lg p-4">
         <div class="flex items-center justify-between mb-2">
           <div class="flex items-center">
