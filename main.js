@@ -46,6 +46,19 @@ document.getElementById("closecookie").addEventListener("click", function () {
   });
 });
 
+let animeteNavLogo = document.getElementById('animateNavLogo');
+
+if (animeteNavLogo){
+   animeteNavLogo.addEventListener('mouseover', function(){
+      animeteNavLogo.classList.add('animate__slideOutRight');
+
+      animeteNavLogo.addEventListener('animationend', function(){
+         animeteNavLogo.classList.remove('animate__slideOutRight');
+         animeteNavLogo.classList.add('animate__slideInLeft');
+      });
+   });
+}
+
 let animationLogo = document.getElementById("logoAnimation");
 
 if (animationLogo) {
