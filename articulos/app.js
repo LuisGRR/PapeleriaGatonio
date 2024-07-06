@@ -193,7 +193,7 @@ arrayArt.forEach((object, index) => {
 
   let button = document.createElement("button");
   button.className =
-    "buttonArtId hover:text-orange rounded-lg text-sm px-5 py-2.5 me-2 mb-2";
+    "border-blue border hover:text-orange rounded-lg text-sm px-5 py-1 me-2 mb-2  focus:border-orange";
   button.innerText = "Ver mas";
   button.setAttribute("data-index", index);
   button.type = "button";
