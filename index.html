@@ -67,7 +67,7 @@
       });
     </script>
   </head>
-  <body>
+  <body class="bg-whithe">
     <nav
       class="flex flex-col md:flex-row justify-around p-5 gap-5 md:gap-0 bg-beige"
     >
@@ -99,11 +99,11 @@
       </ul>
     </nav>
     <header
-      class="h-96 p-5 flex flex-col justify-center items-center bg-cover bg-center"
+      class="h-screen p-5 flex flex-col justify-center items-center bg-cover bg-center"
       style="background-image: url('./assets/img/notebook-3820634_1280.webp')"
     >
       <section class="">
-        <h1 class="text-xl md:text-2xl">
+        <h1 class="text-xl md:text-3xl">
           Papelería Gatonio: Suministros escolares para el aprendizaje exitoso
         </h1>
       </section>
@@ -124,44 +124,74 @@
           Ofresemos
         </h2>
       </section>
-      <section class="m-5 grid grid-cols-1 md:grid-cols-2">
-        <div class="p-2 md:p-5 flex justify-center">
-          <img
-            class="h-64 w-full md:w-96"
-            src="./assets/svg/undraw_photocopy_re_gln4.svg"
-            alt="photocopy"
-          />
-        </div>
-        <div class="flex justify-center items-center p-2">
-          <p class="text-justify">
-            <span class="font-bold">Impresiones y Copias:</span> Ya sea que
-            necesites imprimir un informe importante, copiar documentos para una
-            reunión o producir folletos para un evento, nuestro servicio de
-            impresión y copia de alta calidad está a tu disposición.
-          </p>
-        </div>
-      </section>
-      <section class="m-5 grid grid-cols-1 md:grid-cols-2">
-        <div class="flex justify-around items-center p-2 order-2 md:order-1">
-          <p class="text-justify">
-            <span class="font-bold">Venta de Cartulinas: </span>
-            Tenemos una amplia selección de cartulinas de alta calidad
-            disponibles en una variedad de colores y tamaños. Perfectas para
-            todo, desde proyectos de arte hasta presentaciones profesionales,
-            nuestras cartulinas te ayudarán a llevar tus ideas a la vida.
-          </p>
-        </div>
-        <div class="p-2 md:p-5 order-1 md:order-2 flex justify-center">
-          <img
-            class="h-64 md:w-96"
-            src="./assets/svg/undraw_specs_re_546x.svg"
-            alt="specs"
-          />
-        </div>
-      </section>
+      <section class="swiper Swiper-Services w-full">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide ">
+            <div class="flex flex-col md:flex-row justify-center items-center">
+            <div class="p-2 md:p-5 basis-1/2 flex justify-center">
+              <img
+                class="h-64 w-full md:w-96"
+                src="./assets/svg/undraw_photocopy_re_gln4.svg"
+                alt="photocopy"
+              />
+            </div>
+            <div class="basis-1/2 flex justify-center items-center p-2">
+              <p class="text-justify">
+                <span class="font-bold">Impresiones y Copias:</span> Ya sea que
+                necesites imprimir un informe importante, copiar documentos para una
+                reunión o producir folletos para un evento, nuestro servicio de
+                impresión y copia de alta calidad está a tu disposición.
+              </p>
+            </div>
+            </div>
+          </div>
 
-      <!-- component -->
-      <section class="my-10 flex flex-col items-center justify-center gap-y-3">
+          <div class="swiper-slide h-full">
+            <div class="flex flex-col md:flex-row justify-center items-center">
+              <div class="p-2 md:p-5 basis-1/2 flex justify-center">
+                <img
+                class="h-64 md:w-96"
+                src="./assets/svg/undraw_specs_re_546x.svg"
+                alt="specs"
+                />
+              </div>
+              <div class="basis-1/2 flex justify-around items-center p-2">
+                <p class="text-justify">
+                  <span class="font-bold">Venta de Cartulinas: </span>
+                  Tenemos una amplia selección de cartulinas de alta calidad
+                  disponibles en una variedad de colores y tamaños. Perfectas para
+                  todo, desde proyectos de arte hasta presentaciones profesionales,
+                  nuestras cartulinas te ayudarán a llevar tus ideas a la vida.
+                </p>
+              </div> 
+            </div>
+          </div>
+
+          <div class="swiper-slide min-h-80 h-full flex items-center justify-center flex-col">   
+            <div class="flex flex-col md:flex-row justify-center items-center">
+            <div class="p-2 md:p-5 basis-1/2 flex justify-center">
+            <img
+              class="h-64 md:w-96"
+              src="./assets/svg/personal_notebook.svg"
+              alt="specs"
+            />
+            </div>
+            <div class="flex basis-1/2 justify-around items-center p-2">
+              <p class="text-justify">
+              <span class="font-bold">Articulos variados: </span>
+              En nuestra papelería, encontrarás todo lo que necesitas para la escuela y la oficina. Desde útiles escolares para cada nivel educativo hasta suministros esenciales para tu espacio de trabajo, estamos aquí para equiparte con lo mejor. Ofrecemos una amplia variedad de productos de calidad, desde lápices y cuadernos hasta material de oficina, tecnología y accesorios.
+              </p>
+            </div> 
+</div>
+          </div>
+          
+        </div>
+      </section>
+      <!-- section class="m-5 grid grid-cols-1 md:grid-cols-2">
+              </section -->
+
+      <!-- Servicios -->
+      <section class=" my-10 flex flex-col items-center justify-center gap-y-3">
         <div class="mb-14">
           <h2
           class="text-2xl border-b-2 border-aqua animate__animated animate__backInUp"
@@ -462,69 +492,79 @@
       </section>
 
       <!--Baner-->
-      <div
+      <!--div
         class="h-48 bg-no-repeat bg-center bg-fixed bg-cover"
         style="
           background-image: url('./assets/img/calculator-385506_1280.webp');
         "
-      ></div>
+      ></div -->
 
       <!--Articulos-->
-      <section class="m-5 grid grid-cols-1 md:grid-cols-4 gap-2">
-        <article class="flex flex-col justify-center items-center">
+      <section class="my-10 flex flex-col items-center justify-center gap-y-3">
+ <h2
+          class="text-2xl border-b-2 border-aqua animate__animated animate__backInUp"
+        >
+       Articulos mas vendidos 
+        </h2>
+        <div class="m-5 grid grid-cols-1 md:grid-cols-4 gap-5">
+  
+
+        <article class="flex flex-col justify-center items-center rounded-lg shadow-md hover:scale-105 ease-in transition-transform transform">
           <img
-            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
-            src="./assets/img/Articulos/lapiz-metrico-DIXON-2-224x224.webp"
+            class=" p-2 w-56 h-56"
+            src="./assets/img/Articulos/lapiz-metrico-DIXON-2.webp"
             alt="lapiz-metrico-DIXON"
           />
-          <div class="p-2 flex flex-col justify-center items-center">
-            <p class="font-normal text-justify text-lg">Lapiz Metrico DIXON</p>
-            <p>$7 pz</p>
+          <div class="pt-4 px-6 pb-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify">Lapiz Metrico DIXON</p>
+            <p class="font-bold text-sm">$7 pz</p>
           </div>
         </article>
-        <article class="flex flex-col justify-center items-center">
+
+        <article class="flex flex-col justify-center items-center rounded shadow-lg hover:scale-105 ease-in transition-transform ">
           <img
-            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
-            src="./assets/img/Articulos/Pluma-punto-fino-blazor-tinta-az.webp"
+            class="p-2 w-56 h-56"
+            src="./assets/img/Articulos/Pluma-punto-fino-blazor-tinta-azul.webp"
             alt="Pluma-punto-fino-blazor-tinta-azul"
           />
-          <div class="p-2 flex flex-col justify-center items-center">
-            <p class="font-normal text-justify text-lg">
+          <div class="pt-4 px-6 pb-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify">
               Pluma punto fino blazor tinta azul
             </p>
-            <p>$8 pz</p>
+            <p class="font-bold text-sm">$8 pz</p>
           </div>
         </article>
-        <article class="flex flex-col justify-center items-center">
+        <article class="flex flex-col justify-center items-center rounded shadow-lg hover:scale-105 ease-in transition-transform">
           <img
             class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
-            src="./assets/img/Articulos/Pluma-punto-fino-blazor-tinta-ne.webp"
+            src="./assets/img/Articulos/Pluma-punto-fino-blazor-tinta-negra.webp"
             alt="Pluma-punto-fino-blazor-tinta-negra"
           />
-          <div class="p-2 flex flex-col justify-center items-center">
-            <p class="font-normal text-justify text-lg">
+          <div class="pt-4 px-6 pb-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify">
               Pluma punto fino blazor tinta negra
             </p>
-            <p>$8 pz</p>
+            <p class="font-bold text-sm">$8 pz</p>
           </div>
         </article>
-        <article class="flex flex-col justify-center items-center">
+        <article class="flex flex-col justify-center items-center rounded shadow-lg hover:scale-105 ease-in transition-transform">
           <img
-            class="hover:scale-105 ease-in transition-transform p-2 w-56 h-56"
-            src="./assets/img/Articulos/Pluma-punto-fino-blazor-tinta-ro.webp"
+            class=" p-2 w-56 h-56"
+            src="./assets/img/Articulos/Pluma-punto-fino-blazor-tinta-roja.webp"
             alt="Pluma-punto-fino-blazor-tinta-roja"
           />
-          <div class="p-2 flex flex-col justify-center items-center">
-            <p class="font-normal text-justify text-lg">
+          <div class="pt-4 px-6 pb-2 flex flex-col justify-center items-center">
+            <p class="font-normal text-justify ">
               Pluma punto fino blazor tinta roja
             </p>
-            <p>$8 pz</p>
+            <p class="font-bold text-sm">$8 pz</p>
           </div>
         </article>
+</div>
       </section>
     </main>
     <div
-      class="fixed bottom-0 right-0 mb-4 mr-4 w-64 hidden animate__animated animate__backInRight"
+      class="fixed bottom-0 right-0 mb-4 mr-4 w-64 hidden animate__animated animate__backInRight z-50"
       id="avisoCokkies"
     >
       <!-- bg-science-blue-50  -->
@@ -570,7 +610,7 @@
         </button>
       </div>
     </div>
-    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+    <footer class=" rounded-lg shadow m-4 bg-beige">
       <div
         class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
       >

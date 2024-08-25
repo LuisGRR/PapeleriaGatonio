@@ -21,7 +21,7 @@ module.exports = {
       blue: "#51829B",
       aqua: "#9BB0C1",
       beige: "#EADFB4",
-      whithe:"#FFFFFF",
+      whithe:"#F5F5F5",
     },
   },
   plugins: [],

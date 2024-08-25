@@ -166,7 +166,7 @@ let articles = document.getElementById("sectionArt");
 
 arrayArt.forEach((object, index) => {
   let art = document.createElement("article");
-  art.className = "flex flex-col justify-center items-center";
+  art.className = "flex flex-col justify-center items-center rounded shadow-lg hover:scale-105 ease-in transition-transform";
 
   //creo el contenedor para la imagen
   let img = document.createElement("img");
@@ -193,7 +193,7 @@ arrayArt.forEach((object, index) => {
 
   let button = document.createElement("button");
   button.className =
-    "border-blue border hover:text-orange rounded-lg text-sm px-5 py-1 me-2 mb-2  focus:border-orange";
+    " shadow-sm hover:text-whithe hover:bg-science-blue-500 rounded-lg text-sm px-5 py-1 me-2 mb-2  focus:border-orange";
   button.innerText = "Ver mas";
   button.setAttribute("data-index", index);
   button.type = "button";
