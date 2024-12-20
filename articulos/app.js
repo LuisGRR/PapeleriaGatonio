@@ -3,28 +3,28 @@ let arrayArt = [
     nombre: "Lapiz Metrico DIXON n°2",
     precio: 7,
     get img(){
-      return import('../assets/img/Articulos/lapiz-metrico-DIXON-2-224x224.webp');
+      return import('../assets/img/Articulos/lapiz-metrico-DIXON-2.webp');
     }
   },
   {
     nombre: "Pluma punto fino blazor tinta azul",
     precio: 8,
     get img(){
-      return import("../assets/img/Articulos/Pluma-punto-fino-blazor-tinta-az.webp");
+      return import("../assets/img/Articulos/Pluma-punto-fino-blazor-tinta-azul.webp");
     },
   },
   {
     nombre: "Pluma punto fino blazor tinta negra",
     precio: 8,
     get img(){
-      return import("../assets/img/Articulos/Pluma-punto-fino-blazor-tinta-ne.webp");
+      return import("../assets/img/Articulos/Pluma-punto-fino-blazor-tinta-negra.webp");
     }
   },
   {
     nombre: "Pluma punto fino blazor tinta roja",
     precio: 8,
     get img(){
-      return import("../assets/img/Articulos/Pluma-punto-fino-blazor-tinta-ro.webp");
+      return import("../assets/img/Articulos/Pluma-punto-fino-blazor-tinta-roja.webp");
     }
   },
   {
@@ -166,7 +166,7 @@ let articles = document.getElementById("sectionArt");
 
 arrayArt.forEach((object, index) => {
   let art = document.createElement("article");
-  art.className = "flex flex-col justify-center items-center rounded shadow-lg hover:scale-105 ease-in transition-transform";
+  art.className = "flex flex-col rounded-lg shadow-md hover:scale-105 ease-in transition-transform";
 
   //creo el contenedor para la imagen
   let img = document.createElement("img");
@@ -178,7 +178,7 @@ arrayArt.forEach((object, index) => {
   img.loading = "lazy";
 
   let divfooter = document.createElement("div");
-  divfooter.className = "p-2 flex flex-col w-full p-2 justify-center items-center";
+  divfooter.className = "pt-4 px-6 pb-4 flex flex-col justify-between";
 
   let PNombre = document.createElement("p");
   PNombre.className = "font-normal text-justify text-sm ";
@@ -193,7 +193,7 @@ arrayArt.forEach((object, index) => {
 
   let button = document.createElement("button");
   button.className =
-    " shadow-sm hover:text-whithe hover:bg-science-blue-500 rounded-lg text-sm px-5 py-1 me-2 mb-2  focus:border-orange";
+    "bg-beige shadow-sm hover:text-whithe hover:bg-aqua rounded-lg text-sm px-5 py-1 me-2 mb-2  focus:border-orange";
   button.innerText = "Ver mas";
   button.setAttribute("data-index", index);
   button.type = "button";

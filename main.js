@@ -1,6 +1,6 @@
 import "./style.css";
 
-import "./swiper.js"
+import "./swiper.js";
 
 import "animate.css";
 
@@ -48,15 +48,15 @@ document.getElementById("closecookie").addEventListener("click", function () {
   });
 });
 
-let animeteNavLogo = document.getElementById('animateNavLogo');
+let animeteNavLogo = document.getElementById("animateNavLogo");
 
 if (animeteNavLogo) {
-  animeteNavLogo.addEventListener('mouseover', function () {
-    animeteNavLogo.classList.add('animate__slideOutRight');
+  animeteNavLogo.addEventListener("mouseover", function () {
+    animeteNavLogo.classList.add("animate__slideOutRight");
 
-    animeteNavLogo.addEventListener('animationend', function () {
-      animeteNavLogo.classList.remove('animate__slideOutRight');
-      animeteNavLogo.classList.add('animate__slideInLeft');
+    animeteNavLogo.addEventListener("animationend", function () {
+      animeteNavLogo.classList.remove("animate__slideOutRight");
+      animeteNavLogo.classList.add("animate__slideInLeft");
     });
   });
 }
@@ -73,3 +73,28 @@ if (animationLogo) {
     animationLogo.classList.remove("animate__bounce");
   });
 }
+
+window.onload = () => {
+    const logo = document.getElementById("logScreen");
+
+  // Función para alternar las animaciones
+  function animateLogo() {
+    // Cambia a animate__lightSpeedOutRight después de 1 segundo
+    setTimeout(() => {
+      logo.classList.remove("animate__lightSpeedInLeft");
+      logo.classList.add("animate__lightSpeedOutRight");
+    }, 1000);
+  }
+
+  // Repite el ciclo de animación
+  setInterval(animateLogo, 1000);
+
+  const splash = document.getElementById("splash");
+  const content = document.getElementById("content");
+
+  // Retrasar un poco la transición del splash screen (opcional)
+  setTimeout(() => {
+    splash.classList.add("hidden"); // Oculta el splash screen
+    content.classList.remove("hidden"); // Muestra el contenido principal
+  }, 3000); // 2 segundos
+};
